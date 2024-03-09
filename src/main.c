@@ -6,10 +6,6 @@
 */
 #include "../include/src.h"
 #include "../include/struct.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <time.h>
 
 items_array_t init_items(void)
 {
@@ -70,22 +66,26 @@ int main(void)
 {
     srand(time(NULL));
     items_array_t items = init_items();
-    char input[100];
+    int choix;
 
     do {
-        printf("\033[1;34mHow much summonds do you want to do ? (Type 'quit' to exit) \033[0m");
-        scanf("%s", input);
-        if (strcmp(input, "quit") == 0) {
-            break;
+        printf("\033[1;34m1. Ninja wish summon\n2. Team\n3. Help\n4. Quit\nEnter your choice: \033[0m");
+        scanf("%d", &choix);
+        switch (choix) {
+            case 1: ;
+                ninja_wish_summon(items.items, items.size);
+                break;
+            case 2:
+                printf("You chose Team.\n");
+                break;
+            case 3:
+                printf("You chose Help.\n");
+                break;
+            case 4:
+                break;
+            default:
+                printf("\033[1;31mInvalid choice. Please enter a number between 1 and 4.\033[0m\n");
         }
-        int numInvocations = atoi(input);
-        if (numInvocations < 1 || numInvocations > 10) {
-            printf("\033[1;31mInvalid amount of summons\033[0m\n");
-        } else {
-            printf("\033[1;32m");
-            summon(items.items, items.size, numInvocations);
-            printf("\033[0m");
-        }
-    } while (1);
+    } while (choix != 4);
     return 0;
 }

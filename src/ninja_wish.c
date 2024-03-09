@@ -4,10 +4,7 @@
 ** File description:
 ** ninja_wish
 */
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <time.h>
+#include "../include/src.h"
 #include "../include/struct.h"
 
 void summon(items_t *items, int numItems, int numSummons)
@@ -34,5 +31,20 @@ void summon(items_t *items, int numItems, int numSummons)
         if (strlen(summons[i]) > 0) {
             printf("%s\n", summons[i]);
         }
+    }
+}
+
+void ninja_wish_summon(items_t *items, int size)
+{
+    char input[100];
+    printf("\033[1;34mHow many summons do you want to do ? \033[0m");
+    scanf("%s", input);
+    int numInvocations = atoi(input);
+    if (numInvocations < 1 || numInvocations > 10) {
+        printf("\033[1;31mInvalid amount of summons\033[0m\n");
+    } else {
+        printf("\033[1;32m");
+        summon(items, size, numInvocations);
+        printf("\033[0m");
     }
 }

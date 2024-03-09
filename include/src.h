@@ -17,5 +17,7 @@
 
 void summon(items_t *items, int numItems, int numSummons);
 void ninja_wish_summon(items_t *items, int size);
+void unit_summon(unit_t *units, int numUnits, int numSummons);
+void unit_wish_summon(unit_array_t unit_array);
 
 #endif

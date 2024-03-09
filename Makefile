@@ -17,7 +17,7 @@
 .SILENT:
 CC = gcc
 CFLAGS = -Wall -Wextra -std=c99
-LDFLAGS =
+LDFLAGS = -static
 
 SRC_DIR = src
 OBJ_DIR = obj

@@ -10,7 +10,7 @@
 #include <time.h>
 #include "../include/struct.h"
 
-void summon(items_t *items, int numItems)
+void summon(items_t *items, int numItems, int numSummons)
 {
     int i;
     char summons[10][100] = {0};
@@ -20,7 +20,7 @@ void summon(items_t *items, int numItems)
         totalWeight += items[i].weight;
     }
 
-    for (i = 0; i < 10; i++) {
+    for (i = 0; i < numSummons; i++) {
         double randomNum = (double)rand() * totalWeight / RAND_MAX;
         double currentWeight = 0;
         for (int j = 0; j < numItems; j++) {
@@ -31,7 +31,7 @@ void summon(items_t *items, int numItems)
             }
         }
     }
-    for (i = 0; i < 10; i++) {
+    for (i = 0; i < numSummons; i++) {
         if (strlen(summons[i]) > 0) {
             printf("%s\n", summons[i]);
         }

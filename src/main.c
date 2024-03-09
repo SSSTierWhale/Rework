@@ -70,6 +70,22 @@ int main(void)
 {
     srand(time(NULL));
     items_array_t items = init_items();
-    summon(items.items, items.size);
+    char input[100];
+
+    do {
+        printf("How many summons do you want to do ? (Use 'quit' to leave) ");
+        scanf("%s", input);
+
+        if (strcmp(input, "quit") == 0) {
+            break;
+        }
+        int numInvocations = atoi(input);
+        if (numInvocations < 1 || numInvocations > 10) {
+            printf("Invalid amount of summons\n");
+        } else {
+            summon(items.items, items.size, numInvocations);
+        }
+    } while (1);
+
     return 0;
 }

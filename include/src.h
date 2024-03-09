@@ -10,6 +10,6 @@
 
 #include "struct.h"
 
-void summon(items_t *items, int numItems);
+void summon(items_t *items, int numItems, int numSummons);
 
 #endif

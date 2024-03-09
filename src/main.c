@@ -11,10 +11,9 @@
 #include <string.h>
 #include <time.h>
 
-int main(void)
+items_array_t init_items(void)
 {
-    srand(time(NULL));
-    items_t items[] = {
+    static items_t items[] = {
         {"Boruto", 1.363231749397397},
         {"Power of Sage", 2.744466559315083},
         {"Elite Ninjutsu ninja random card", 0.7591290519388293},
@@ -63,7 +62,14 @@ int main(void)
         {"SR Taijutsu random card", 2.5244291529560017},
         {"Basic Enhancement Stone", 2.5244291529560017}
     };
-    int numItems = sizeof(items) / sizeof(items[0]);
-    summon(items, numItems);
+    items_array_t result = {items, sizeof(items) / sizeof(items[0])};
+    return result;
+}
+
+int main(void)
+{
+    srand(time(NULL));
+    items_array_t items = init_items();
+    summon(items.items, items.size);
     return 0;
 }

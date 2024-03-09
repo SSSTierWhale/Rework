@@ -13,4 +13,9 @@ typedef struct items_s {
     double weight;
 } items_t;
 
+typedef struct items_array_s {
+    items_t *items;
+    int size;
+} items_array_t;
+
 #endif

@@ -21,9 +21,9 @@ void summon(items_t *items, int numItems)
     }
 
     for (i = 0; i < 10; i++) {
+        double randomNum = (double)rand() * totalWeight / RAND_MAX;
         double currentWeight = 0;
         for (int j = 0; j < numItems; j++) {
-            double randomNum = (double)rand() * totalWeight / RAND_MAX;
             currentWeight += items[j].weight;
             if (randomNum < currentWeight) {
                 sprintf(summons[i], "Ninja Wish: Summoned %s", items[j].name);

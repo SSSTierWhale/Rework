@@ -75,7 +75,6 @@ int main(void)
     do {
         printf("How many summons do you want to do ? (Use 'quit' to leave) ");
         scanf("%s", input);
-
         if (strcmp(input, "quit") == 0) {
             break;
         }
@@ -86,6 +85,5 @@ int main(void)
             summon(items.items, items.size, numInvocations);
         }
     } while (1);
-
     return 0;
 }

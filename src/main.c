@@ -73,16 +73,18 @@ int main(void)
     char input[100];
 
     do {
-        printf("How many summons do you want to do ? (Use 'quit' to leave) ");
+        printf("\033[1;34mHow much summonds do you want to do ? (Type 'quit' to exit) \033[0m");
         scanf("%s", input);
         if (strcmp(input, "quit") == 0) {
             break;
         }
         int numInvocations = atoi(input);
         if (numInvocations < 1 || numInvocations > 10) {
-            printf("Invalid amount of summons\n");
+            printf("\033[1;31mInvalid amount of summons\033[0m\n");
         } else {
+            printf("\033[1;32m");
             summon(items.items, items.size, numInvocations);
+            printf("\033[0m");
         }
     } while (1);
     return 0;

@@ -19,7 +19,6 @@ void summon(items_t *items, int numItems, int numSummons)
     for (i = 0; i < numItems; i++) {
         totalWeight += items[i].weight;
     }
-
     for (i = 0; i < numSummons; i++) {
         double randomNum = (double)rand() * totalWeight / RAND_MAX;
         double currentWeight = 0;

@@ -21,11 +21,11 @@ def display_archive_units():
     with open('archive_units.json', 'r') as f:
         units = json.load(f)
     for unit in units:
-        print(f"Nom: {unit['name']}")
+        print(f"Name: {unit['name']}")
         print(f"Type: {unit['type']}")
         print(f"Stats: Hp: {unit['stats']['Hp']}, ATK: {unit['stats']['ATK']}, DEF: {unit['stats']['DEF']}")
         print(f"Range: {unit['Range']}")
-        print(f"Type d'unité: {unit['unit_type']}")
+        print(f"Unit type: {unit['unit_type']}")
         if unit['DPS'] == 'yes':
             print("DPS: Yes")
         if unit['SPT'] == 'yes':

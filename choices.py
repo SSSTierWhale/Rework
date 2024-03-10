@@ -15,6 +15,35 @@
 ##                                                                                     ##
 ## ----------------------------------------------------------------------------------- ##
 from colorama import Fore, Style
+import json
+
+def display_archive_units():
+    with open('archive_units.json', 'r') as f:
+        units = json.load(f)
+    for unit in units:
+        print(f"Nom: {unit['name']}")
+        print(f"Type: {unit['type']}")
+        print(f"Stats: Hp: {unit['stats']['Hp']}, ATK: {unit['stats']['ATK']}, DEF: {unit['stats']['DEF']}")
+        print(f"Range: {unit['Range']}")
+        print(f"Type d'unité: {unit['unit_type']}")
+        if unit['DPS'] == 'yes':
+            print("DPS: Yes")
+        if unit['SPT'] == 'yes':
+            print("SPT: Yes")
+        if unit['Medic'] == 'yes':
+            print("Medic: Yes")
+        if unit['DEF'] == 'yes':
+            print("DEF: Yes")
+        print(f"F. Jutsu: {unit['f_jutsu']}")
+        for skill in unit['skills']:
+            if 'chakra' in skill:
+                print(f"Chakra: {skill['chakra']}")
+                print(f"Description: {skill['description']}")
+            elif 'Passive' in skill:
+                print(f"Passive: {skill['Passive']}")
+            elif 'Talent' in skill:
+                print(f"Talent: {skill['Talent']}")
+        print()
 
 def get_choice():
     while True:
@@ -48,7 +77,13 @@ def get_more_choices():
         print(f"{Fore.LIGHTBLUE_EX}10. Back{Style.RESET_ALL}")
 
         choice = input(f"{Fore.CYAN}Enter your choice: {Style.RESET_ALL}")
-        if choice.isdigit() and 1 <= int(choice) <= 10:
-            return int(choice)
+        if choice.isdigit():
+            choice = int(choice)
+            if 1 <= choice <= 8:
+                return choice
+            elif choice == 9:
+                display_archive_units()
+            elif choice == 10:
+                return choice
         else:
             print("Invalid choice, try again.")

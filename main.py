@@ -42,7 +42,7 @@ class Choice:
             elif choice == 9:
                 print(f"{Fore.LIGHTGREEN_EX}Goodbye!{Style.RESET_ALL}")
                 break
-            
+
 if __name__ == "__main__":
     choice = Choice()
     choice.main()

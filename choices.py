@@ -26,7 +26,7 @@ def get_choice():
         print(f"{Fore.LIGHTBLUE_EX}6. Ninja Bond{Style.RESET_ALL}")
         print(f"{Fore.LIGHTBLUE_EX}7. Ranking{Style.RESET_ALL}")
         print(f"{Fore.LIGHTBLUE_EX}8. Shop{Style.RESET_ALL}")
-        print(f"{Fore.LIGHTBLUE_EX}9. Archive{Style.RESET_ALL}")
+        print(f"{Fore.LIGHTBLUE_EX}9. Exit{Style.RESET_ALL}")
         
         choice = input(f"{Fore.CYAN}Enter your choice: {Style.RESET_ALL}")
         if choice.isdigit() and 1 <= int(choice) <= 9:
@@ -47,7 +47,7 @@ def get_more_choices():
         print("9. Archive")
         print("10. Back")
 
-        choice = input("Enter your choice: ")
+        choice = input(f"{Fore.CYAN}Enter your choice: {Style.RESET_ALL}")
         if choice.isdigit() and 1 <= int(choice) <= 10:
             return int(choice)
         else:

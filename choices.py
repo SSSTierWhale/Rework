@@ -32,14 +32,15 @@ def display_archive_units():
         print(f"{Fore.LIGHTYELLOW_EX}Range: {unit['Range']}{Style.RESET_ALL}")
         print(f"{Fore.LIGHTYELLOW_EX}Unit type: {unit['unit_type']}{Style.RESET_ALL}")
         print(f"{Fore.LIGHTYELLOW_EX}F. Jutsu: {unit['f_jutsu']}{Style.RESET_ALL}")
+        print(f"{Fore.LIGHTYELLOW_EX}Rarity: {unit['rarity']}{Style.RESET_ALL}")
         for skill in unit['skills']:
             if 'chakra' in skill:
                 print(f"{Fore.LIGHTYELLOW_EX}Chakra: {skill['chakra']}{Style.RESET_ALL}")
                 print(f"{Fore.LIGHTYELLOW_EX}Description: {skill['description']}{Style.RESET_ALL}")
-            elif 'Passive' in skill:
+            if 'Passive' in skill:
                 print(f"{Fore.LIGHTYELLOW_EX}Passive Name: {skill['Passive_name']}{Style.RESET_ALL}")
                 print(f"{Fore.LIGHTYELLOW_EX}Passive: {skill['Passive']}{Style.RESET_ALL}")
-            elif 'Talent' in skill:
+            if 'Talent' in skill:
                 print(f"{Fore.LIGHTYELLOW_EX}Talent Name: {skill['Talent_name']}{Style.RESET_ALL}")
                 print(f"{Fore.LIGHTYELLOW_EX}Talent: {skill['Talent']}{Style.RESET_ALL}")
         print()

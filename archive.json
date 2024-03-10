@@ -2,6 +2,7 @@
     {
         "name": "Zaku",
         "type": "Ninjutsu",
+        "rarity": "R",
         "stats": {
             "Hp": 6031,
             "ATK": 574,
@@ -20,6 +21,7 @@
     {
         "name": "Kin",
         "type": "Ninjutsu",
+        "rarity": "R",
         "stats": {
             "Hp": 8042,
             "ATK": 431,
@@ -38,6 +40,7 @@
     {
         "name": "Dosu",
         "type": "Genjutsu",
+        "rarity": "R",
         "stats": {
             "Hp": 8042,
             "ATK": 431,
@@ -56,6 +59,7 @@
     {
         "name": "Gozu",
         "type": "Taijutsu",
+        "rarity": "R",
         "stats": {
             "Hp": 8042,
             "ATK": 431,
@@ -74,6 +78,7 @@
     {
         "name": "Meto",
         "type": "Taijutsu",
+        "rarity": "R",
         "stats": {
             "Hp": 6031,
             "ATK": 574,
@@ -92,6 +97,7 @@
     {
         "name": "Sakon & Ukon",
         "type": "Ninjutsu",
+        "rarity": "SR",
         "stats": {
             "Hp": 20105,
             "ATK": 478,
@@ -118,6 +124,7 @@
     {
         "name": "Sasuke (Part I)",
         "type": "Genjutsu",
+        "rarity": "SR",
         "stats": {
             "Hp": 10052,
             "ATK": 957,
@@ -144,6 +151,7 @@
     {
         "name": "Shiranui Genma",
         "type": "Ninjutsu",
+        "rarity": "SR",
         "stats": {
             "Hp": 10052,
             "ATK": 957,
@@ -170,6 +178,7 @@
     {
         "name": "Naruto (Part I)",
         "type": "Taijutsu",
+        "rarity": "SR",
         "stats": {
             "Hp": 20105,
             "ATK": 482,
@@ -196,6 +205,7 @@
     {
         "name": "Iruka",
         "type": "Taijutsu",
+        "rarity": "SR",
         "stats": {
             "Hp": 9952,
             "ATK": 952,
@@ -222,6 +232,7 @@
     {
         "name": "Hayate",
         "type": "Taijutsu",
+        "rarity": "SR",
         "stats": {
             "Hp": 10052,
             "ATK": 957,
@@ -248,6 +259,7 @@
     {
         "name": "Tayuya",
         "type": "Genjutsu",
+        "rarity": "SR",
         "stats": {
             "Hp": 13403,
             "ATK": 718,
@@ -274,6 +286,7 @@
     {
         "name": "Kidomaru",
         "type": "Ninjutsu",
+        "rarity": "SR",
         "stats": {
             "Hp": 10052,
             "ATK": 957,
@@ -300,6 +313,7 @@
     {
         "name": "Yoroi",
         "type": "Genjutsu",
+        "rarity": "SR",
         "stats": {
             "Hp": 20105,
             "ATK": 478,
@@ -326,6 +340,7 @@
     {
         "name": "Mizuki",
         "type": "Genjutsu",
+        "rarity": "SR",
         "stats": {
             "Hp": 10052,
             "ATK": 957,
@@ -352,6 +367,7 @@
     {
         "name": "Jirobo",
         "type": "Ninjutsu",
+        "rarity": "SR",
         "stats": {
             "Hp": 20105,
             "ATK": 478,
@@ -378,6 +394,7 @@
     {
         "name": "Kotetsu",
         "type": "Taijutsu",
+        "rarity": "SR",
         "stats": {
             "Hp": 13403,
             "ATK": 718,
@@ -404,6 +421,7 @@
     {
         "name": "Sakura (Part I)",
         "type": "Taijutsu",
+        "rarity": "SR",
         "stats": {
             "Hp": 13403,
             "ATK": 718,
@@ -430,12 +448,13 @@
     {
         "name": "Shizune",
         "type": "Genjutsu",
+        "rarity": "SR",
         "stats": {
             "Hp": 10052,
             "ATK": 957,
             "DEF": 145
         },
-        "range": "Melee",
+        "Range": "Melee",
         "unit_type": "DPS",
         "f_jutsu": "no",
         "skills": [
@@ -456,6 +475,7 @@
     {
         "name": "Izumo",
         "type": "Ninjutsu",
+        "rarity": "SR",
         "stats": {
             "Hp": 10052,
             "ATK": 957,

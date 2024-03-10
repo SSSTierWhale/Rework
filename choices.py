@@ -16,33 +16,32 @@
 ## ----------------------------------------------------------------------------------- ##
 from colorama import Fore, Style
 import json
+import os
+
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
+from colorama import Fore, Style
 
 def display_archive_units():
-    with open('archive_units.json', 'r') as f:
+    with open('archive.json', 'r') as f:
         units = json.load(f)
     for unit in units:
-        print(f"Name: {unit['name']}")
-        print(f"Type: {unit['type']}")
-        print(f"Stats: Hp: {unit['stats']['Hp']}, ATK: {unit['stats']['ATK']}, DEF: {unit['stats']['DEF']}")
-        print(f"Range: {unit['Range']}")
-        print(f"Unit type: {unit['unit_type']}")
-        if unit['DPS'] == 'yes':
-            print("DPS: Yes")
-        if unit['SPT'] == 'yes':
-            print("SPT: Yes")
-        if unit['Medic'] == 'yes':
-            print("Medic: Yes")
-        if unit['DEF'] == 'yes':
-            print("DEF: Yes")
-        print(f"F. Jutsu: {unit['f_jutsu']}")
+        print(f"{Fore.LIGHTYELLOW_EX}Name: {unit['name']}{Style.RESET_ALL}")
+        print(f"{Fore.LIGHTYELLOW_EX}Type: {unit['type']}{Style.RESET_ALL}")
+        print(f"{Fore.LIGHTYELLOW_EX}Stats: Hp: {unit['stats']['Hp']}, ATK: {unit['stats']['ATK']}, DEF: {unit['stats']['DEF']}{Style.RESET_ALL}")
+        print(f"{Fore.LIGHTYELLOW_EX}Range: {unit['Range']}{Style.RESET_ALL}")
+        print(f"{Fore.LIGHTYELLOW_EX}Unit type: {unit['unit_type']}{Style.RESET_ALL}")
+        print(f"{Fore.LIGHTYELLOW_EX}F. Jutsu: {unit['f_jutsu']}{Style.RESET_ALL}")
         for skill in unit['skills']:
             if 'chakra' in skill:
-                print(f"Chakra: {skill['chakra']}")
-                print(f"Description: {skill['description']}")
+                print(f"{Fore.LIGHTYELLOW_EX}Chakra: {skill['chakra']}{Style.RESET_ALL}")
+                print(f"{Fore.LIGHTYELLOW_EX}Description: {skill['description']}{Style.RESET_ALL}")
             elif 'Passive' in skill:
-                print(f"Passive: {skill['Passive']}")
+                print(f"{Fore.LIGHTYELLOW_EX}Passive Name: {skill['Passive_name']}{Style.RESET_ALL}")
+                print(f"{Fore.LIGHTYELLOW_EX}Passive: {skill['Passive']}{Style.RESET_ALL}")
             elif 'Talent' in skill:
-                print(f"Talent: {skill['Talent']}")
+                print(f"{Fore.LIGHTYELLOW_EX}Talent Name: {skill['Talent_name']}{Style.RESET_ALL}")
+                print(f"{Fore.LIGHTYELLOW_EX}Talent: {skill['Talent']}{Style.RESET_ALL}")
         print()
 
 def get_choice():

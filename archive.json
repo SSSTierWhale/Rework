@@ -1,0 +1,482 @@
+[
+    {
+        "name": "Zaku",
+        "type": "Ninjutsu",
+        "stats": {
+            "Hp": 6031,
+            "ATK": 574,
+            "DEF": 87
+        },
+        "Range": "Mid-Range",
+        "unit_type": "DPS",
+        "f_jutsu": "no",
+        "skills": [
+            {
+                "chakra": "Slicing Sound Wave",
+                "description": "Attack the closest target and deal 518% P.DMG."
+            }
+        ]
+    },
+    {
+        "name": "Kin",
+        "type": "Ninjutsu",
+        "stats": {
+            "Hp": 8042,
+            "ATK": 431,
+            "DEF": 87
+        },
+        "Range": "Mid-Range",
+        "unit_type": "SPT",
+        "f_jutsu": "no",
+        "skills": [
+            {
+                "chakra": "Flying Needles",
+                "description": "Attack 2 closest targets and deal 139% P.DMG, plus a 43% per sec Split DoT DMG for 4.5 sec."
+            }
+        ]
+    },
+    {
+        "name": "Dosu",
+        "type": "Genjutsu",
+        "stats": {
+            "Hp": 8042,
+            "ATK": 431,
+            "DEF": 87
+        },
+        "Range": "Melee",
+        "unit_type": "SPT",
+        "f_jutsu": "no",
+        "skills": [
+            {
+                "chakra": "Supersonic Arm",
+                "description": "Attack the closest target and deal 291% P.DMG, target's DEF -330, last 3 sec."
+            }
+        ]
+    },
+    {
+        "name": "Gozu",
+        "type": "Taijutsu",
+        "stats": {
+            "Hp": 8042,
+            "ATK": 431,
+            "DEF": 87
+        },
+        "Range": "Melee",
+        "unit_type": "SPT",
+        "f_jutsu": "no",
+        "skills": [
+            {
+                "chakra": "Chains Attack",
+                "description": "Attack the farthest target and deal 236% M.DMG. Extra DMG based on the distance, plus an extra DMG up to 1181% M.DMG."
+            }
+        ]
+    },
+    {
+        "name": "Meto",
+        "type": "Taijutsu",
+        "stats": {
+            "Hp": 6031,
+            "ATK": 574,
+            "DEF": 87
+        },
+        "Range": "Melee",
+        "unit_type": "DPS",
+        "f_jutsu": "no",
+        "skills": [
+            {
+                "chakra": "Chains Attack",
+                "description": "Attack the farthest target and deal 202% M.DMG. Extra DMG based on the distance, plus an extra DMG up to 101% M.DMG."
+            }
+        ]
+    },
+    {
+        "name": "Sakon & Ukon",
+        "type": "Ninjutsu",
+        "stats": {
+            "Hp": 20105,
+            "ATK": 478,
+            "DEF": 145
+        },
+        "Range": "Melee",
+        "unit_type": "DEF",
+        "f_jutsu": "no",
+        "skills": [
+            {
+                "chakra": "Barrier Method",
+                "description": "Attack all targets within a radius of 8 to the front and deal 249% P.DMG, reduce healing amount by 252%"
+            },
+            {
+                "Passive_name": "Twin Evils",
+                "Passive": "Basic attack has 22% chance to deal twice basic attacks to the closest target"
+            },
+            {
+                "Talent_name": "Twin Lives",
+                "Talent": "When battle starts, MAX HP +5%, till the end of the battle"
+            }
+        ]
+    },
+    {
+        "name": "Sasuke (Part I)",
+        "type": "Genjutsu",
+        "stats": {
+            "Hp": 10052,
+            "ATK": 957,
+            "DEF": 145
+        },
+        "Range": "Mid-Range",
+        "unit_type": "DPS",
+        "f_jutsu": "no",
+        "skills": [
+            {
+                "chakra": "Great Fireball Jutsu",
+                "description": "Attack all targets within a radius of 25 to the front and knockback deal 214 % M.DMG. Deal 59% more DMG if target was in Burn"
+            },
+            {
+                "Passive_name": "Body Flicker Jutsu",
+                "Passive": "When battle starts, dodge + 500, till the end of the battle"
+            },
+            {
+                "Talent_name": "Focus",
+                "Talent": "Basic attack has 30% chance to get 320 more Skill DMG, last 3 se, can be stacked, up to 3 levels"
+            }
+        ]
+    },
+    {
+        "name": "Shiranui Genma",
+        "type": "Ninjutsu",
+        "stats": {
+            "Hp": 10052,
+            "ATK": 957,
+            "DEF": 145
+        },
+        "Range": "Long-Range",
+        "unit_type": "DPS",
+        "f_jutsu": "no",
+        "skills": [
+            {
+                "chakra": "Fireball jutsu",
+                "description": "Attack and knockback 3 farthest targets, deal 265% M.DMG"
+            },
+            {
+                "Passive_name": "Fire Enhancement",
+                "Passive": "When battle starts, Skill DMG + 360"
+            },
+            {
+                "Talent_name": "Senbon",
+                "Talent": "100% to get 300 more CRIT and 120 CRIT DMG when taking hits, last 5 sec. Can be stacked up to 2 levels"
+            }
+        ]
+    },
+    {
+        "name": "Naruto (Part I)",
+        "type": "Taijutsu",
+        "stats": {
+            "Hp": 20105,
+            "ATK": 482,
+            "DEF": 145
+        },
+        "Range": "Melee",
+        "unit_type": "DEF",
+        "f_jutsu": "no",
+        "skills": [
+            {
+                "chakra": "Naruto Combo",
+                "description": "target with the highest ATK loses 21% of ATK, last 5 sec. Cause a 0.5 sec stun. Attack all targets within a radius of 8 nearby and deal 310% P.DMG"
+            },
+            {
+                "Passive_name": "Ninja Will",
+                "Passive": "Every 20% HP lost gets a HoT effect, heal 87% HP per sec (based on ATK). Last 3 sec"
+            },
+            {
+                "Talent_name": "Preparation",
+                "Talent": "Def+200 if it was at front. Skill SPD+925 if it was at middle"
+            }
+        ]
+    },
+    {
+        "name": "Iruka",
+        "type": "Taijutsu",
+        "stats": {
+            "Hp": 9952,
+            "ATK": 952,
+            "DEF": 145
+        },
+        "Range": "Mid-Range",
+        "unit_type": "DPS",
+        "f_jutsu": "no",
+        "skills": [
+            {
+                "chakra": "Paper Bomb",
+                "description": "Attack a random target and deal 243% M.DMG and knockdown. Attack all targets within a radius of 8 nearby and deal 195% M.DMG"
+            },
+            {
+                "Passive_name": "Clone Technique",
+                "Passive": "Every 12 sec summons a clone to the front. Clone has 27% HP (based on the ATK). Clone can taunt and attack all targets within a radius of 10, last 6 sec."
+            },
+            {
+                "Talent_name": "Teamwork",
+                "Talent": "When battle starts, all friendly units within a radius of 30 get 9% more ATK till the battle ends"
+            }
+        ]
+    },
+    {
+        "name": "Hayate",
+        "type": "Taijutsu",
+        "stats": {
+            "Hp": 10052,
+            "ATK": 957,
+            "DEF": 145
+        },
+        "Range": "Melee",
+        "unit_type": "DPS",
+        "f_jutsu": "no",
+        "skills": [
+            {
+                "chakra": "Crescent Moon Dance",
+                "description": "Attack target with the lowest HP and deal 276% M.DMG, plus a 77% per sec Poison DoT DMG, last 5 sec"
+            },
+            {
+                "Passive_name": "Shadow Clone Technique",
+                "Passive": "Every 11 sec summons 2 clones, each clone attacks a target randomly and deal 44% M.DMG on basic attack. Clone lasts 6 sec"
+            },
+            {
+                "Talent_name": "Rage",
+                "Talent": "When battle starts, CRIT+400 and CRIT DMG+350, last 10 sec"
+            }
+        ]
+    },
+    {
+        "name": "Tayuya",
+        "type": "Genjutsu",
+        "stats": {
+            "Hp": 13403,
+            "ATK": 718,
+            "DEF": 145
+        },
+        "Range": "Mid-Range",
+        "unit_type": "SPT",
+        "f_jutsu": "no",
+        "skills": [
+            {
+                "chakra": "Chains of Fantasia",
+                "description": "Attack 2 targets with the highest ATK and deal 158% P.DMG, plus a 55% per sec DoT P.DMG. Target can't move, basic attack, or use jutsu, last 4 sec"
+            },
+            {
+                "Passive_name": "Juin Form",
+                "Passive": "Basic attacks has 25% chance to attack all targets within a radius of 30 to the front and deal 24% P.DMG, plus a 22% per sec Burn DoT DMG, last 4 sec"
+            },
+            {
+                "Talent_name": "Anger",
+                "Talent": "When battle starts, all friendly units within a radius of 30 get 180 more CRIT DMG"
+            }
+        ]
+    },
+    {
+        "name": "Kidomaru",
+        "type": "Ninjutsu",
+        "stats": {
+            "Hp": 10052,
+            "ATK": 957,
+            "DEF": 145
+        },
+        "Range": "Long-Range",
+        "unit_type": "DPS",
+        "f_jutsu": "no",
+        "skills": [
+            {
+                "chakra": "Sticky Spider Thread",
+                "description": "Attack 3 targets with the lowest HP and deal 197% P.DMG. Deal 66% more DMG if target was in Poison. Bind target, unable to move, last 5 sec"
+            },
+            {
+                "Passive_name": "Spider Bow: Fierce Rip",
+                "Passive": "When battle starts, ATK+7% till the battle ends"
+            },
+            {
+                "Talent_name": "Juin Form",
+                "Talent": "When battle starts, CRIT DMG+300, till the battle ends"
+            }
+        ]
+    },
+    {
+        "name": "Yoroi",
+        "type": "Genjutsu",
+        "stats": {
+            "Hp": 20105,
+            "ATK": 478,
+            "DEF": 145
+        },
+        "Range": "Melee",
+        "unit_type": "DEF",
+        "f_jutsu": "no",
+        "skills": [
+            {
+                "chakra": "Chakra Absorb",
+                "description": "Attack all targets within a radius of 15 to the front and deal 205% P.DMG, ban chakra skills also freeze chakra. Last 2 sec"
+            },
+            {
+                "Passive_name": "Hellfire",
+                "Passive": "Every 10 sec, attacks all targets within a radius of 15 to the front and deal 131% P.DMG, plus a 46% per sec Burn DoT DMG, last 4 sec"
+            },
+            {
+                "Talent_name": "Breaker",
+                "Talent": "Basic attack has 25% chance to attack the closest target and deal 110% P.DMG, target's DEF-550, last 4 sec. Can be stacked up to 2 levels. When using chakra skills, purge all buffs on targets within skill range"
+            }
+        ]
+    },
+    {
+        "name": "Mizuki",
+        "type": "Genjutsu",
+        "stats": {
+            "Hp": 10052,
+            "ATK": 957,
+            "DEF": 145
+        },
+        "Range": "Mid-Range",
+        "unit_type": "DPS",
+        "f_jutsu": "no",
+        "skills": [
+            {
+                "chakra": "Shuriken",
+                "description": "Attack 3 targets with the lowest HP and deal 174% M.DMG, deal 51% more DMG if target was in Burn."
+            },
+            {
+                "Passive_name": "Juin Power",
+                "Passive": "When battle starts, all friendly units within a radius of 25, CRIT+330, last 10 sec"
+            },
+            {
+                "Talent_name": "Splash",
+                "Talent": "Basic attack has 25% chance to attack the farthest target and reduce target's ATK by 11%, last 4 sec"
+            }
+        ]
+    },
+    {
+        "name": "Jirobo",
+        "type": "Ninjutsu",
+        "stats": {
+            "Hp": 20105,
+            "ATK": 478,
+            "DEF": 145
+        },
+        "Range": "Melee",
+        "unit_type": "DEF",
+        "f_jutsu": "no",
+        "skills": [
+            {
+                "chakra": "Earth Dome Prison",
+                "description": "Attack all targets within a radius of 20 to the front and deal 258% P.DMG, also kockdown"
+            },
+            {
+                "Passive_name": "Terra Shield",
+                "Passive": "Every 6.5 sec increases DEF for all friendly units within a radius of 15 by 360, last 3.5 sec"
+            },
+            {
+                "Talent_name": "Juin Form",
+                "Talent": "50% chance to heal 51% HP (based on ATK) when taking hits, chance increased to 100% when taking CRIT hits"
+            }
+        ]
+    },
+    {
+        "name": "Kotetsu",
+        "type": "Taijutsu",
+        "stats": {
+            "Hp": 13403,
+            "ATK": 718,
+            "DEF": 145
+        },
+        "Range": "Melee",
+        "unit_type": "SPT",
+        "f_jutsu": "no",
+        "skills": [
+            {
+                "chakra": "Giant Staff",
+                "description": "Attack all targets within a radius of 6 to the front and deal 243% P.DMG"
+            },
+            {
+                "Passive_name": "Breaker",
+                "Passive": "Basic attack has 30% chance to attack the closest target and deal 37% P.DMG, plus a 13% per sec Poison DoT DMG, last 4 sec, can be stacked up to 2 levels"
+            },
+            {
+                "Talent_name": "Twin blades",
+                "Talent": "50% chance to get 150 more CRIT when taking hits, last 4 sec, can't be stacked"
+            }
+        ]
+    },
+    {
+        "name": "Sakura (Part I)",
+        "type": "Taijutsu",
+        "stats": {
+            "Hp": 13403,
+            "ATK": 718,
+            "DEF": 145
+        },
+        "Range": "Mid-Range",
+        "unit_type": "Medic",
+        "f_jutsu": "no",
+        "skills": [
+            {
+                "chakra": "Mystical Palm Jutsu",
+                "description": "Heal friendly unit with the lowest HP for 262% (based on ATK) HP, and purge all debuffs on target with the highest ATK"
+            },
+            {
+                "Passive_name": "First-Aid",
+                "Passive": "Basic attack has 20% chance to heal friendly unit with the lowest HP for 262% (based on ATK) HP"
+            },
+            {
+                "Talent_name": "Unseal",
+                "Talent": "Every 10 sec gets 360 more DEF, last 4 sec. When using Chakra skills, purge all debufs on 2 friendly units with the lowest HP"
+            }
+        ]
+    },
+    {
+        "name": "Shizune",
+        "type": "Genjutsu",
+        "stats": {
+            "Hp": 10052,
+            "ATK": 957,
+            "DEF": 145
+        },
+        "range": "Melee",
+        "unit_type": "DPS",
+        "f_jutsu": "no",
+        "skills": [
+            {
+                "chakra": "Poison Smog",
+                "description": "Attack all targets within a radius of 14 to the front and deal 85 M.DMG, plus a 30% per sec Poison DoT DMG, last 4 sec, purger all debuffs on 1 friendly unit"
+            },
+            {
+                "Passive_name": "Regenerative Healing Jutsu",
+                "Passive": "Every 6 sec heals all friendly units within a radius of 10 for 136% HP (based on ATK)"
+            },
+            {
+                "Talent_name": "Unseal",
+                "Talent": "Basic attack has 30% chance to increase Dodge for all friendly units within a radius of 15 by 320, last 5 sec. Can be stacked, up to 2 levels"
+            }
+        ]
+    },
+    {
+        "name": "Izumo",
+        "type": "Ninjutsu",
+        "stats": {
+            "Hp": 10052,
+            "ATK": 957,
+            "DEF": 145
+        },
+        "Range": "Mid-Range",
+        "unit_type": "DPS",
+        "f_jutsu": "no",
+        "skills": [
+            {
+                "chakra": "Syrup Trap",
+                "description": "Attack target with the highest ATK and all targets nearby within a radius of 10, deal 90% M.DMG, target's Skill DMG-200, last 5 sec. Bind target, unableto move, last 4 sec"
+            },
+            {
+                "Passive_name": "Twin Fangs Slash",
+                "Passive": "Every 20 sec, selects 2 closest targets and deal 201% M.DMG. Less HP gets more DMG, plus an extra DMG up to 50% M.DMG"
+            },
+            {
+                "Talent_name": "Raid",
+                "Talent": "Basic attack has 30% chance to attack the farthest target and reduce its CRIT by 320, last 6 sec, can't be stacked"
+            }
+        ]
+    }
+]

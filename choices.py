@@ -14,23 +14,25 @@
 ##         █        █  ███████        ████  ████        ██      ██  ████  █            ##
 ##                                                                                     ##
 ## ----------------------------------------------------------------------------------- ##
+from colorama import Fore, Style
+
 def get_choice():
     while True:
-        print("1. More")
-        print("2. Challenge")
-        print("3. Ninja")
-        print("4. Hire")
-        print("5. F. Jutsu")
-        print("6. Beasts")
-        print("7. Six Path Tools")
-        print("8. Other Events")
-        print("9. Exit")
+        print(f"{Fore.LIGHTBLUE_EX}1. Clan{Style.RESET_ALL}")
+        print(f"{Fore.LIGHTBLUE_EX}2. Succession{Style.RESET_ALL}")
+        print(f"{Fore.LIGHTBLUE_EX}3. Academy{Style.RESET_ALL}")
+        print(f"{Fore.LIGHTBLUE_EX}4. Lab{Style.RESET_ALL}")
+        print(f"{Fore.LIGHTBLUE_EX}5. Ally{Style.RESET_ALL}")
+        print(f"{Fore.LIGHTBLUE_EX}6. Ninja Bond{Style.RESET_ALL}")
+        print(f"{Fore.LIGHTBLUE_EX}7. Ranking{Style.RESET_ALL}")
+        print(f"{Fore.LIGHTBLUE_EX}8. Shop{Style.RESET_ALL}")
+        print(f"{Fore.LIGHTBLUE_EX}9. Archive{Style.RESET_ALL}")
         
-        choice = input("Enter your choice: ")
+        choice = input(f"{Fore.CYAN}Enter your choice: {Style.RESET_ALL}")
         if choice.isdigit() and 1 <= int(choice) <= 9:
             return int(choice)
         else:
-            print("Invalid choice, try again.")
+            print(f"{Fore.RED}Invalid choice, try again.{Style.RESET_ALL}")
 
 def get_more_choices():
     while True:

@@ -17,6 +17,7 @@
 ##                                                                                     ##
 ## ----------------------------------------------------------------------------------- ##
 from choices import get_choice, get_more_choices
+from colorama import Fore, Style
 
 class Choice:
     def main(self):
@@ -24,23 +25,22 @@ class Choice:
             choice = get_choice()
             if choice == 1:
                 more_choice = get_more_choices()
-                print(f"You chose {more_choice}")
             elif choice == 2:
-                print("Challenge")
+                print(f"{Fore.LIGHTGREEN_EX}Succession{Style.RESET_ALL}")
             elif choice == 3:
-                print("Ninja")
+                print(f"{Fore.LIGHTGREEN_EX}Academy{Style.RESET_ALL}")
             elif choice == 4:
-                print("Hire")
+                print(f"{Fore.LIGHTGREEN_EX}Hire{Style.RESET_ALL}")
             elif choice == 5:
-                print("F. Jutsu")
+                print(f"{Fore.LIGHTGREEN_EX}F. Jutsu{Style.RESET_ALL}")
             elif choice == 6:
-                print("Beasts")
+                print(f"{Fore.LIGHTGREEN_EX}Beasts{Style.RESET_ALL}")
             elif choice == 7:
-                print("Six Path Tools")
+                print(f"{Fore.LIGHTGREEN_EX}Six Path Tools{Style.RESET_ALL}")
             elif choice == 8:
-                print("Other Events")
+                print(f"{Fore.LIGHTGREEN_EX}Other Events{Style.RESET_ALL}")
             elif choice == 9:
-                print("Exiting...")
+                print(f"{Fore.LIGHTGREEN_EX}Goodbye!{Style.RESET_ALL}")
                 break
             
 if __name__ == "__main__":
